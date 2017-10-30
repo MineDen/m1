@@ -1,0 +1,15 @@
+[
+{
+  "modid": "mtest",
+  "name": "Den Test",
+  "description": "TESTING DEN!",
+  "version": "1.1.25",
+  "mcversion": "${mcversion}",
+  "url": "",
+  "updateUrl": "",
+  "authorList": ["MineDen"],
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]

@@ -1,0 +1,14 @@
+{
+    "forge_marker": 1,
+    "defaults": {
+        "textures": {
+            "all": "mtest:blocks/lead_ore"
+        },
+        "model": "mtest:lead_ore",
+        "uvlock": true
+    },
+    "variants": {
+        "normal": [{
+        }]
+    }
+}

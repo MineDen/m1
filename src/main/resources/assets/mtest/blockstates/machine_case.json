@@ -1,0 +1,14 @@
+{
+    "forge_marker": 1,
+    "defaults": {
+        "textures": {
+            "all": "mtest:blocks/machine_case"
+        },
+        "model": "mtest:machine_case",
+        "uvlock": true
+    },
+    "variants": {
+        "normal": [{
+        }]
+    }
+}

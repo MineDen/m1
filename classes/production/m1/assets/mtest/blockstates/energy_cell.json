@@ -1,0 +1,19 @@
+{
+    "forge_marker": 1,
+    "defaults": {
+        "textures": {
+            "west": "mtest:blocks/energy_cell",
+            "up": "mtest:blocks/machine_case_vside",
+            "down": "mtest:blocks/machine_case",
+            "north": "mtest:blocks/energy_cell",
+            "south": "mtest:blocks/energy_cell",
+            "east": "mtest:blocks/energy_cell"
+        },
+        "model": "mtest:energy_cell",
+        "uvlock": true
+    },
+    "variants": {
+        "normal": [{
+        }]
+    }
+}

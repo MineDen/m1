@@ -1,0 +1,12 @@
+{
+    "parent": "block/cube",
+    "textures": {
+        "west": "mtest:blocks/energy_cell",
+        "up": "mtest:blocks/machine_case_vside",
+        "down": "mtest:blocks/machine_case",
+        "north": "mtest:blocks/energy_cell",
+        "south": "mtest:blocks/energy_cell",
+        "east": "mtest:blocks/energy_cell",
+        "particle": "mtest:blocks/machine_case"
+    }
+}

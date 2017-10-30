@@ -1,0 +1,18 @@
+tile.lead_block.name=Block of Lead
+tile.lead_ore.name=Lead Ore
+tile.machine_case.name=Machine Case
+
+item.lead_ingot.name=Lead Ingot
+
+item.lead_pickaxe.name=Lead Pickaxe
+item.lead_axe.name=Lead Axe
+item.lead_shovel.name=Lead Shovel
+item.lead_sword.name=Lead Sword
+item.lead_hoe.name=Lead Hoe
+
+item.lead_hemlet.name=Lead Hemlet
+item.lead_chestplate.name=Lead Chestplate
+item.lead_pants=Lead Pants
+item.lead_boots=Lead Boots
+
+container.energy_cell=Energy Cell
