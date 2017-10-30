@@ -6,7 +6,6 @@ import net.minecraft.network.NetworkManager;
 import net.minecraft.network.play.server.SPacketUpdateTileEntity;
 import net.minecraft.tileentity.TileEntity;
 import net.minecraft.util.ITickable;
-import net.minecraft.util.math.BlockPos;
 
 import javax.annotation.Nullable;
 
@@ -17,10 +16,8 @@ public class AutoTEEnergy extends TileEntity implements ITickable{
     private int capacity = 10000;
     private int transferSpeed = 100;
 
-    public AutoTEEnergy(int capacity, int transferSpeed){
+    public AutoTEEnergy(){
         storage = new MEnergyStorage(capacity, transferSpeed);
-        this.capacity = capacity;
-        this.transferSpeed = transferSpeed;
     }
 
     @Override
@@ -50,7 +47,6 @@ public class AutoTEEnergy extends TileEntity implements ITickable{
     @Override
     public void readFromNBT(NBTTagCompound nbt){
         int energy = nbt.getInteger("Energy");
-        storage = new MEnergyStorage(this.capacity, this.transferSpeed);
         this.storage.setEnergy(energy);
         super.readFromNBT(nbt);
     }

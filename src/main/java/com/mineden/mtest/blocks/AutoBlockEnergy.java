@@ -39,7 +39,7 @@ public class AutoBlockEnergy extends Block implements ITileEntityProvider {
 
     @Override
     public TileEntity createNewTileEntity(World worldIn, int meta) {
-        return new AutoTEEnergy(10000, 100);
+        return new AutoTEEnergy();
     }
 
     public void register() {
