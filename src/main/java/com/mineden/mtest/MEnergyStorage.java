@@ -19,7 +19,7 @@ public class MEnergyStorage {
     }
 
     public void setEnergy(int energy){
-        if(energy > 0 && energy < this.capacity)
+        if(energy >= 0 && energy <= this.capacity)
             this.energy = energy;
         else if(energy < 0)
             this.energy = 0;
@@ -28,7 +28,7 @@ public class MEnergyStorage {
 
     public int addEnergy(int energy){
         int e = Math.min(this.transferSpeed, energy);
-        if(this.energy + e < this.capacity)
+        if(this.energy + e <= this.capacity)
             this.energy = this.energy + e;
         else if(this.energy + e > this.capacity)
             this.energy = this.capacity;
@@ -37,7 +37,7 @@ public class MEnergyStorage {
 
     public int removeEnergy(int energy){
         int e = Math.min(this.transferSpeed, energy);
-        if(this.energy - e > 0)
+        if(this.energy - e >= 0)
             this.energy = this.energy - e;
         else if(this.energy - e < 0)
             this.energy = 0;

@@ -34,7 +34,7 @@ public class GuiEnergyCell extends GuiContainer {
         int centerY = height / 2 - this.ySize / 2;
         drawTexturedModalRect(centerX, centerY, 0, 0, this.xSize, this.ySize);
         int energyY = Math.round(te.storage.getEnergy() / opx);
-        drawTexturedModalRect(centerX + 7, centerY + 7 + (69 - energyY), 34, 255 - energyY, 16, energyY);
+        drawTexturedModalRect(centerX + 7, centerY + 7 + (69 - energyY), 34, 256 - energyY, 16, energyY);
         drawHoveringText("Stored: " + te.storage.getEnergy() + "RF/10000RF", mouseX, mouseY);
         String contName = I18n.format("container.energy_cell");
         int cnW = fontRenderer.getStringWidth(contName);

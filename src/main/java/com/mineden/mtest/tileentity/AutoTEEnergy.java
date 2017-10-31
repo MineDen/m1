@@ -55,8 +55,15 @@ public class AutoTEEnergy extends TileEntity implements ITickable{
     public void update(){
         if(this.world != null && this.world.isRemote){
             this.storage.addEnergy(1);
-            this.markDirty();
+            this.updateData();
         }
+    }
+
+    private void updateData(){
+        this.world.markBlockRangeForRenderUpdate(pos, pos);
+        this.world.notifyBlockUpdate(pos, world.getBlockState(pos), world.getBlockState(pos), 3);
+        this.world.scheduleUpdate(pos, this.getBlockType(), 0);
+        this.markDirty();
     }
 
 }
