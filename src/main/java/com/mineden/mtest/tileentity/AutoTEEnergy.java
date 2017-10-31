@@ -53,7 +53,7 @@ public class AutoTEEnergy extends TileEntity implements ITickable{
 
     @Override
     public void update(){
-        if(this.world != null && this.world.isRemote){
+        if(this.world != null && !this.world.isRemote){
             this.storage.addEnergy(1);
             this.updateData();
         }
