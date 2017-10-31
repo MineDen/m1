@@ -19,7 +19,7 @@ public class MEnergyStorage {
     }
 
     public void setEnergy(int energy){
-        if(energy > 0 && energy < this.capacity)
+        if(energy >= 0 && energy <= this.capacity)
             this.energy = energy;
         else if(energy < 0)
             this.energy = 0;
